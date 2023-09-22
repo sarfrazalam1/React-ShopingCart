@@ -1,0 +1,42 @@
+@import "colors";
+
+nav{
+    background-color: $secondary;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    top: 0%;
+
+    > h2{
+        font-variant: small-caps;
+        color: $tertiary;
+    }
+
+    > div{
+        display: flex;
+        align-items: center;
+
+        > a{
+            color: $primary;
+            font-size: 1.2rem;
+            margin: 0 1rem;
+            transition: all 0.3s;
+            &:hover{
+                opacity: 0.5;
+            }
+
+            > p{
+                position: absolute;
+                background-color: $tertiary;
+                border-radius: 50%;
+                width: 14px;
+                height: 17px;
+                font-size: 15px;
+                display: grid;
+                place-items: center;
+                transform: translate(80%, -80%);
+            }
+        }
+    }
+}
